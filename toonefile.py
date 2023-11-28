@@ -22,9 +22,7 @@ def main():
                 try:
                     with open(full_path, 'r') as f:
                         content = f.read()
-                        print(content)
-                        
-                        # Append the file name and its content to the result file
+                        print(content)                        
                         with open('result.txt', 'a') as result_file:
                             result_file.write(f"\n\nFile: {file}\n\n{content}\n")
                 except Exception as e:
