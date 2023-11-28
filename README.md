@@ -1,8 +1,14 @@
-# Como usar
+# To One File 
+Sencilla herramienta que consiste en un script pyhton, que recorre el árbol de directorios de tu proyecto y genera un archivo de texto con la información de cada archivo existente.
+
 
 * excluya los directorios y archivos que no deseas consolidar editando el archivo toonefile.py
 ```python
 exclusions = ["__pycache__", "envpy", "result.txt"]
+```
+* Define el path inicial, en el ejemplo recorre todo el directorio actual
+```python
+main_folder_path = './'
 ```
 
 * ejecuta el script
